@@ -1,0 +1,24 @@
+GET http://localhost:1706/posts 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJtZW93ZWlyZCIsImlhdCI6MTY4MTc1MDI4NCwiZXhwIjoxNjgxNzUwNDA0fQ.xwR4Gsxi6m9besQkwVtqVZ2QdLDIpxBHtif62ziGLI4
+
+### 
+
+POST http://localhost:2707/login 
+Content-Type: application/json
+
+{
+    "username" : "meoweird"
+}
+
+###
+POST http://localhost:2707/token 
+Content-Type: application/json
+
+{
+    "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJtZW93ZWlyZCIsImlhdCI6MTY4MTc1MDMwMiwiZXhwIjoxNjgxNzUzOTAyfQ.EWmOd2cll4nSMQShlNdwZbSmDe1hgYfAsNrm5FE8AQM"
+}
+
+### 
+DELETE http://localhost:2707/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJtZW93ZWlyZCIsImlhdCI6MTY4MTc1MDMxNiwiZXhwIjoxNjgxNzUwNDM2fQ.NSRP0lItTDgEW0HmnrG1guvu4CmI7MjgNoNwRBp1bBk
+
